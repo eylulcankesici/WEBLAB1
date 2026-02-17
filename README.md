@@ -21,3 +21,6 @@ npm install
 '''bash
 npm run dev
 '''
+## Ekran Goruntusu
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4cfff8de-4116-451e-bb6f-5167f1523822" />
+
