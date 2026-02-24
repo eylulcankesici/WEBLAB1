@@ -42,7 +42,7 @@ function App() {
                     <article>
                         <h3>Proje 1: Hello World</h3>
                         <p>LAB-1 kapsaminda yapilan ilk React projesi.</p>
-                        <img src="https://via.placeholder.com/150" alt="LAB-1 ekran goruntusu" />
+                        <img src="/project.png" alt="LAB-1 ekran goruntusu" />
                     </article>
                     <article>
                         <h3>Proje 2: Semantik Portfolyo</h3>
