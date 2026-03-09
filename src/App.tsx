@@ -8,6 +8,7 @@ function App() {
             </a>
 
             <header>
+                <div className="site-title">Eylül Can Kesici</div>
                 <nav aria-label="Ana navigasyon">
                     <ul>
                         <li><a href="#hakkimda">Hakkimda</a></li>
@@ -18,44 +19,59 @@ function App() {
             </header>
 
             <main id="main-content">
-                <h1>Eylül Can Kesici - Kisisel Portfolyo</h1>
-
                 <section id="hakkimda">
                     <h2>Hakkimda</h2>
-                    <figure>
-                        <img src="/image.png" alt="Eylül Can Kesici'in vesikalik fotografi" />
-                        <figcaption>Eylül Can Kesici</figcaption>
-                    </figure>
-                    <p>
-                        Merhaba! Ben Eylül Can Kesici, 235542003 numarali ogrenciyim.
-                        Web Tasarimi ve Programlama dersi kapsaminda modern web teknolojileri ogreniyorum.
-                    </p>
-                    <ul>
-                        <li>React 18</li>
-                        <li>TypeScript</li>
-                        <li>Vite</li>
-                    </ul>
+                    <div className="about-content">
+                        <figure>
+                            <img src="/image.png" alt="Eylül Can Kesici'in vesikalik fotografi" />
+                            <figcaption>Eylül Can Kesici</figcaption>
+                        </figure>
+                        <div>
+                            <p>
+                                Merhaba! Ben Eylül Can Kesici, 235542003 numarali ogrenciyim.
+                                Web Tasarimi ve Programlama dersi kapsaminda modern web teknolojileri ogreniyorum.
+                            </p>
+                            <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="projeler">
                     <h2>Projelerim</h2>
-                    <article>
-                        <h3>Proje 1: Hello World</h3>
-                        <p>LAB-1 kapsaminda yapilan ilk React projesi.</p>
-                        <img src="/project.png" alt="LAB-1 ekran goruntusu" />
-                    </article>
-                    <article>
-                        <h3>Proje 2: Semantik Portfolyo</h3>
-                        <p>LAB-2 kapsaminda yapilan semantik ve erisilebilir web sayfasi.</p>
-                        <img src="https://via.placeholder.com/150" alt="LAB-2 ekran goruntusu" />
-                    </article>
+                    <div className="project-grid">
+                        <article className="project-card">
+                            <img src="/project.png" alt="LAB-1 ekran goruntusu" />
+                            <h3>Proje 1: Hello World</h3>
+                            <p>LAB-1 kapsaminda yapilan ilk React projesi.</p>
+                            <ul className="skill-tags">
+                                <li>React 18</li>
+                                <li>Vite</li>
+                            </ul>
+                        </article>
+
+                        <article className="project-card">
+                            <img src="https://via.placeholder.com/150" alt="LAB-2 ekran goruntusu" />
+                            <h3>Proje 2: Semantik Portfolyo</h3>
+                            <p>LAB-2 kapsaminda yapilan semantik ve erisilebilir web sayfasi.</p>
+                            <ul className="skill-tags">
+                                <li>HTML5</li>
+                            </ul>
+                        </article>
+                    </div>
                 </section>
 
                 <section id="iletisim">
                     <h2>Iletisim</h2>
                     <form action="#" method="POST" noValidate>
                         <fieldset>
-                            <legend>Iletisim Formu</legend>
+                            <legend className="visually-hidden" style={{ display: 'none' }}>Iletisim Formu</legend>
 
                             <div className="form-group">
                                 <label htmlFor="name">Ad Soyad:</label>
